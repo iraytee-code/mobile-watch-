@@ -1,0 +1,146 @@
+/* CSS reset */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+}
+* {
+  font-family: "PT Sans", sans-serif;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+q:before,
+q:after {
+  content: "";
+}
+
+body {
+  background: red;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  font-family: "PT Sans", sans-serif;
+  color: #ffffff;
+}
+
+.watch-body {
+  box-sizing: border-box;
+  background: #000000;
+  width: 250px;
+  height: 300px;
+  border-radius: 20px;
+  margin: auto;
+  padding: 15px;
+}
+.home-screen {
+  background: #000000;
+}
+
+.home-screen.deactivate-home {
+  position: absolute;
+  top: -200%;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.welcome-txt {
+  text-align: center;
+  padding: 15px 0;
+}
+.welcome-txt p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #bcbcbd;
+}
+
+.time {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.time span {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.hour-counter,
+.seconds-counter,
+.minutes-counter,
+.period {
+  padding: 0 5px;
+}
+
+.date-info {
+  text-align: center;
+}
+.date-info span {
+  font-size: 15px;
+  color: #bcbcbd;
+}
+
+.menu {
+  text-align: center;
+  padding: 25px 0;
+}
+
+.menu button {
+  cursor: pointer;
+  padding: 5px 15px;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background: #814de5;
+  color: #ffffff;
+}

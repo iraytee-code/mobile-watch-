@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./Style sheet/homepage.css" />
+  <link rel="stylesheet" href="./Style sheet/menuscreen.css">
+  <link rel="stylesheet" href="./Style sheet/stopwatchScreen.css">
+  <link rel="stylesheet" href="./Style sheet/timerscreen.css">
+  <title>Welcome || Mobile Watch Interface</title>
+</head>
+
+<body>
+  <div class="watch-body">
+    <div class="home-screen">
+      <div class="nav-bar">
+        <div class="temp-indicator">
+          <i class="fa fa-sun-o" aria-hidden="true"></i>
+          <span>20 &#176 C </span>
+        </div>
+        <div class="battery-indicator">
+          <i class="fa fa-battery-three-quarters" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="welcome-txt">
+        <p>Hello, James</p>
+      </div>
+      <div class="time">
+        <span class="hour-counter">00</span>
+        <span class="seconds-counter">:</span>
+        <span class="minutes-counter">00</span>
+        <span class="period"></span>
+      </div>
+      <div class="date-info">
+        <span class="day">Thursday</span>
+        <span class="date">3rd</span>
+        <span class="of">of</span>
+        <span class="month">August</span>
+      </div>
+      <div class="menu">
+        <button class="menu-btn">Menu</button>
+      </div>
+    </div>
+    <div class="menu-screen">
+      <div class="nav-bar">
+        <div class="back-home">
+          <i class="fa fa-chevron-left" aria-hidden="true"></i>
+          <span>Back</span>
+        </div>
+        <div class="battery-indicator">
+          <i class="fa fa-battery-three-quarters" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="menu-options">
+        <img id="weather" src="./images/weather icon.png" alt="">
+        <img id="calculator" src="./images/calculator icon.png" alt="">
+        <img id="stopwatch" src="./images/stopwatch icon.png" alt="">
+        <img id="health" src="./images/health icon.png" alt="">
+        <img id="maps" src="./images/maps icon.png" alt="">
+        <img id="timer" src="./images/timer icon.png" alt="">
+        <img id="alarm" src="./images/alarm icon.png" alt="">
+        <img id="health" src="./images/health icon.png" alt="">
+        <img src="./images/weather icon.png" alt="">
+      </div>
+    </div>
+    <div class="stopwatch-screen">
+      <div class="nav-bar">
+        <div class="back-menu">
+          <i class="fa fa-chevron-left" aria-hidden="true"></i>
+          <span>Back</span>
+        </div>
+        <div class="battery-indicator">
+          <i class="fa fa-battery-three-quarters" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="stopwatch-txt">
+        <p>Hi James, Let's begin</p>
+      </div>
+      <div class="stopwatch-indicator">
+        <span class="mins">00</span>:<span class="seconds">00</span>:<span class="tens">00</span>
+      </div>
+      <div class="stopwatch-controls">
+        <button class="btn-reset">Reset</button>
+        <button class="btn-start">Start</button>
+        <button class="btn-stop">Stop</button>
+
+      </div>
+    </div>
+    <div class="timer-screen">
+      <div class="nav-bar">
+        <div class="exit-timer">
+          <i class="fa fa-chevron-left" aria-hidden="true"></i>
+          <span>Back</span>
+        </div>
+        <div class="battery-indicator">
+          <i class="fa fa-battery-three-quarters" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="user-txt">
+        <p>Hi James, Set a timer..</p>
+      </div>
+      <div class="set-timer">
+        <input id="hourTimer-x" type="number" max="99" min="0" value="0" class="time">
+        <p id="p1" class="semicolon">
+          <p id="hour-timer" class="label">Hr</p>
+        </p>
+        <input id="minuteTimer-x" type="number" max="60" min="0" value="0" class="time">
+        <p id="p2" class="semicolon">
+          <p id="min-timer" class="label">Min</p>
+        </p>
+        <input id="secTimer-x" type="number" max="60" min="0" value="0" class="time">
+        <p id="sec-timer" class="label">Sec</p>
+      </div>
+      <div class="timer-buttons">
+
+        <button id="start" class="btn">Start</button>
+      </div>
+    </div>
+    <div class="timer-screen-two">
+      <div class="nav-bar">
+        <div class="exit-timer">
+          <i class="fa fa-chevron-left" aria-hidden="true"></i>
+          <span>Back</span>
+        </div>
+        <div class="battery-indicator">
+          <i class="fa fa-battery-three-quarters" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="fancy">
+        
+      </div>
+      <div class="timer-controls">
+        <button id="reset" class="btn-reset">Cancel</button>
+        <button id="pause" class="btn-pause">Pause</button>
+      </div>
+      
+      <!-- <p class="display-mins"></p><span>Hello</span><p class="display-secs"></p> -->
+    </div>
+  </div>
+  <script src="./Scripts/screenActions.js"></script>
+  <script src="./Scripts/clock.js"></script>
+  <script src="./Scripts/stopwatch.js"></script>
+  <script src="./Scripts/timer.js"></script>
+</body>
+
+</html>

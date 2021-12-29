@@ -1,0 +1,81 @@
+.back-menu {
+  cursor: pointer;
+}
+
+.stopwatch-screen {
+  position: absolute;
+  top: -200%;
+}
+
+.stopwatch-screen.activate-stopwatch {
+  position: relative;
+  top: 0%;
+}
+.stopwatch-txt {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.stopwatch-txt p {
+  font-size: 20px;
+  color: #bcbcbd;
+}
+
+.stopwatch-indicator {
+  /* background: red; */
+  text-align: center;
+  padding: 20px 0;
+  font-size: 50px;
+}
+
+.stopwatch-controls {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  /* width: 80%; */
+  margin: 0 auto;
+  /* background: red; */
+}
+
+.btn-stop {
+  display: none;
+}
+
+.btn-stop.activate-stop {
+  display: block;
+  border: none;
+  background: #814de5;
+  color: #ffffff;
+  outline: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.btn-start.deactivate-start {
+  display: none;
+}
+
+.btn-reset {
+  border: none;
+  background: #000000;
+  border: 2px solid #814de5;
+  color: #814de5;
+  outline: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.btn-start {
+  border: none;
+  background: #814de5;
+  color: #ffffff;
+  outline: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}

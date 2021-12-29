@@ -1,0 +1,32 @@
+.menu-screen {
+  position: absolute;
+  top: -200%;
+}
+
+.menu-screen.activate-menu {
+  position: relative;
+  top: 0;
+}
+
+.back-home {
+  cursor: pointer;
+}
+
+.menu-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  text-align: center;
+  justify-items: stretch;
+  padding: 10px 0;
+}
+
+.menu-options img {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.menu-options img:hover {
+  scale: 1.2;
+}
